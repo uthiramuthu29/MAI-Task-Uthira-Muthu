@@ -1,0 +1,163 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.link {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  color: white;
+  border-radius: 13px;
+  padding: 18px 75px;
+  background: #003f6b;
+  border: 1px solid #003f6b;
+}
+
+header nav .nav-right-ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.banner-carousel h1 {
+  font-family: "League Spartan", sans-serif;
+}
+.banner-carousel .banner-btns a {
+  box-shadow: 0 3.13px 3.13px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Slides animation */
+.carousel-slides {
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Preview box effect */
+.preview-box img {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.preview-box img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Dot active effect */
+.dot {
+  transition: background 0.3s ease, width 0.3s ease;
+}
+
+.active-dot {
+  background-color: #0095ff;
+}
+
+.slider-wrapper .slider-track {
+  transition: transform 0.5s ease-in-out;
+}
+.slider-wrapper .slider-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.slider-wrapper .slider-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+.slider-wrapper button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.end-to-end-real-stats .end-to-end ul li {
+  position: relative;
+}
+.end-to-end-real-stats .end-to-end ul li h6 {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.hover-cards .hover-item .hover-collapse {
+  background: #1a2d55;
+  width: 223px;
+  border-radius: 33px;
+  height: 720px;
+  position: relative;
+}
+.hover-cards .hover-item .hover-collapse h3 {
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 0.2);
+  transform: rotate(-90deg);
+  position: absolute;
+}
+.hover-cards .hover-item .hover-collapse img {
+  position: absolute;
+  bottom: 0;
+}
+.hover-cards .hover-item .hover-expand {
+  background: #1a2d55;
+  background: linear-gradient(90deg, rgb(26, 45, 85) 0%, rgb(47, 87, 205) 43%);
+  padding-top: 50px;
+  padding-left: 37px;
+  border-radius: 26px;
+  width: 1216px;
+  height: 720px;
+}
+.hover-cards .hover-item .hover-expand h3 {
+  font-family: "Orelega One", serif;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 100%;
+  color: white;
+  margin-bottom: 33px;
+}
+.hover-cards .hover-item .hover-expand p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+  padding: 56px 33px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 22px;
+  margin-bottom: 33px;
+  max-width: 975px;
+}
+.hover-cards .hover-item .hover-expand img {
+  margin-left: auto;
+  margin-right: 120px;
+  position: relative;
+  bottom: 53px;
+}
+
+.slider-wrapper .slider-track .slider-card {
+  position: relative;
+}
+.slider-wrapper .slider-track .slider-card .content {
+  position: absolute;
+  left: 25%;
+  bottom: 30px;
+}
+.slider-wrapper .slider-track .slider-card .content h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.slider-wrapper .slider-track .slider-card .content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.latest-blog .images-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.latest-blog .images-section img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orelega+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="fixed z-9 w-full ">
+        <div class="bg-[#003F6B] px-[100px] py-[20px] flex justify-between items-center ">
+            <div class="logo">
+                <a href="/"><img src="assets/img/logo.svg" alt="Logo"></a>
+
+            </div>
+            <div class="flex gap-[20px] bg-white items-center px-[20px] py-[7px] rounded-[10px] ">
+                <p class="text-[12px]/[100%] text-[#333333] font-medium ">Need help? We’re here for you</p>
+                <div class="icons flex gap-[10px]  ">
+                    <a href="#" class="p-[8px] bg-[#003F6B40] rounded-full "><img src="assets/img/video.svg" alt="Video"><span class="text-[12px]/[100%] font-medium text-[#003F6B] ">Book a
+                            Demo</span></a>
+                    <a href="https://www.myproject.ai/contact-us" class="p-[8px] bg-[#003F6B40] rounded-full "><img src="assets/img/call.svg" alt="Call"><span class="text-[12px]/[100%] font-medium text-[#003F6B]">Contact
+                            us</span></a>
+                </div>
+
+            </div>
+            <a href="#" class="user flex items-center rounded-[50px] bg-[#FFFFFF33] pl-[10px] pr-[30px] py-[8px] gap-[10px] ">
+                <img class="bg-[#668CA7] p-[6px] rounded-full " src="assets/img/user.svg" alt="User">
+                <p class="text-[15px]/[100%] text-white font-medium ">Sign In</p>
+            </a>
+        </div>
+        <nav class="flex justify-between bg-white px-[100px] py-[16px] text-[17px]/[100%] text-[#003F6B] font-medium ">
+            <ul class="flex items-center gap-[30px] ">
+                <li><a href="/">Home</a></li>
+                <li><a href="https://www.myproject.ai/how-it-works/project-owner">How it Works</a></li>
+                <li><a href="https://www.myproject.ai/projects">Project</a></li>
+                <li><a href="https://www.myproject.ai/blogs">Blogs</a></li>
+                <li><a href="#">DIY Worktops</a></li>
+            </ul>
+            <ul class="nav-right-ul flex gap-[20px] uppercase ">
+                <li><a href="https://www.myproject.ai/post-a-project"><img src="assets/img/post-plus.svg" alt="Post">Post Project</a></li>
+                <li>|</li>
+                <li><a href="https://www.myproject.ai/projects"><img src="assets/img/send-minus.svg" alt="Send">Send Proposals</a></li>
+                <li>|</li>
+                <li><a href="https://www.myproject.ai/projects"><img src="assets/img/apply-bag.svg" alt="Apply">Apply Internship</a></li>
+                <li>|</li>
+                <li><a href="#"><img src="assets/img/cart.svg" alt="Cart"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="banner-carousel relative w-full max-w-full mx-auto overflow-hidden">
+        <div class="flex carousel-slides" id="carousel">
+            <img src="assets/img/banner-carousel-one.png" class="w-full flex-shrink-0" />
+            <img src="assets/img/banner-carousel-two.png" class="w-full flex-shrink-0" />
+            <img src="assets/img/banner-carousel-three.png" class="w-full flex-shrink-0" />
+            <img src="assets/img/banner-carousel-four.png" class="w-full flex-shrink-0" />
+        </div>
+
+        <div class="absolute top-1/2 mx-[100px] ">
+            <h1 class="text-[45px]/[68px] font-bold text-white capitalize mb-[8px] max-w-[600px]  ">Connect with
+                highly-rated professionals
+                near you.</h1>
+            <p class="text-[22px]/[100%] font-normal text-white mb-[50px] ">Get matched with trusted traders at the
+                right price in
+                less time.</p>
+            <div class="flex gap-[15px] banner-btns">
+                <a class="flex gap-[10px] text-[16px]/[100%] font-medium text-[#F5F5F5] px-[52px] py-[12px] rounded-[10px] bg-[#003F6B] "
+                    href="#"><svg width="21" height="18" viewBox="0 0 21 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4"
+                            d="M10.75 0H4.75C1.33 0 0 1.33 0 4.75V12.75C0 15.05 1.25 17.5 4.75 17.5H10.75C14.17 17.5 15.5 16.17 15.5 12.75V4.75C15.5 1.33 14.17 0 10.75 0Z"
+                            fill="white" />
+                        <path
+                            d="M9.25109 8.13057C9.49798 8.13057 9.74245 8.08195 9.97054 7.98747C10.1986 7.89299 10.4059 7.75451 10.5805 7.57994C10.755 7.40536 10.8935 7.19811 10.988 6.97002C11.0825 6.74193 11.1311 6.49746 11.1311 6.25057C11.1311 6.00369 11.0825 5.75922 10.988 5.53113C10.8935 5.30304 10.755 5.09579 10.5805 4.92121C10.4059 4.74664 10.1986 4.60816 9.97054 4.51368C9.74245 4.4192 9.49798 4.37057 9.25109 4.37057C8.75249 4.37057 8.2743 4.56865 7.92173 4.92121C7.56916 5.27378 7.37109 5.75197 7.37109 6.25057C7.37109 6.74918 7.56916 7.22737 7.92173 7.57994C8.2743 7.9325 8.75249 8.13057 9.25109 8.13057ZM19.4001 2.92157C18.9901 2.71157 18.1301 2.47157 16.9601 3.29157L15.4801 4.33157C15.4901 4.47157 15.5001 4.60157 15.5001 4.75157V12.7516C15.5001 12.9016 15.4801 13.0316 15.4801 13.1716L16.9601 14.2116C17.5801 14.6516 18.1201 14.7916 18.5501 14.7916C18.9201 14.7916 19.2101 14.6916 19.4001 14.5916C19.8101 14.3816 20.5001 13.8116 20.5001 12.3816V5.13157C20.5001 3.70157 19.8101 3.13157 19.4001 2.92157Z"
+                            fill="white" />
+                    </svg>
+                    Book a Demo</a>
+                <a class="flex gap-[10px] text-[16px]/[100%] font-medium text-[#003F6B] px-[52px] py-[12px] rounded-[10px] bg-[#FFFFFF] "
+                    href="https://www.myproject.ai/contact-us"><img src="assets/img/call.svg" alt="Call">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="dot-preview absolute top-[85%] right-[4%] transform -translate-y-1/2 ">
+            <div
+                class="w-[150px] h-[103px] mx-auto mb-[4px] border border-white overflow-hidden rounded shadow-md preview-box">
+                <img id="preview" src="assets/img/banner-carousel-one.png" class="w-full h-full object-cover">
+            </div>
+
+            <div class=" flex gap-2">
+                <button class="dot w-[34px] h-[5px] bg-[#D9D9D9] rounded-sm" data-index="0"></button>
+                <button class="dot w-[34px] h-[5px] bg-[#D9D9D9] rounded-sm" data-index="1"></button>
+                <button class="dot w-[34px] h-[5px] bg-[#D9D9D9] rounded-sm" data-index="2"></button>
+                <button class="dot w-[34px] h-[5px] bg-[#D9D9D9] rounded-sm" data-index="3"></button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="end-to-end-real-stats mx-[100px] mt-[70px] ">
+        <div class="end-to-end mb-[145px] ">
+            <div class="flex justify-between mb-[66px] ">
+                <h2 class="font-semibold text-[43px] leading-[100%] text-[#333333] ">End to End Home Service</h2>
+                <a class="link" href="https://www.myproject.ai/services">View All Services</a>
+            </div>
+            <ul class="flex gap-[26px] mb-[26px] ">
+                <li><img src="assets/img/carpenter.png" alt="Carpenter">
+                    <h6>Carpenter</h6>
+                </li>
+                <li><img src="assets/img/painting.png" alt="Painting">
+                    <h6>Painting</h6>
+                </li>
+                <li><img src="assets/img/guttering.png" alt="Guttering">
+                    <h6>Guttering</h6>
+                </li>
+                <li><img src="assets/img/locksmith.png" alt="Locksmith">
+                    <h6>Locksmith</h6>
+                </li>
+                <li><img src="assets/img/door-fitting.png" alt="Fitting">
+                    <h6>Fitting</h6>
+                </li>
+            </ul>
+            <ul class="flex gap-[26px]">
+                <li><img src="assets/img/wall-cladding.png" alt="Wall Cladding">
+                    <h6>Wall Cladding</h6>
+                </li>
+                <li><img src="assets/img/electrical.png" alt="Electrical">
+                    <h6>Electrical</h6>
+                </li>
+                <li class="e-img"><img src="assets/img/roofing.png" alt="Roofing">
+                    <h6>Roofing</h6>
+                </li>
+                <li class="e-img"><img src="assets/img/gas-works.png" alt="Gas Works">
+                    <h6>Gas Works</h6>
+                </li>
+                <li class="e-img"><img src="assets/img/guttering.png" alt="Guttering">
+                    <h6>Guttering</h6>
+                </li>
+            </ul>
+        </div>
+        <div class="real-stats flex mb-[275px] ">
+            <div class="content w-[55%] ">
+                <h2 class="font-semibold text-[43px] leading-[100%] text-[#333333] mb-[57px] ">The Real Stats Behind UK
+                    Home Services</h2>
+                <p class="font-normal text-[22px] leading-[100%] text-black opacity-[0.8] ">Over 32% of homeowners say
+                    hiring a trustworthy professional is harder than the actual renovation. Around 1 in 4 projects in
+                    the UK either get delayed or dropped completely just because people can’t find the right help. We
+                    built this platform to finally close the gap between people who need home or commercial services and
+                    the experts who can actually get the job done. </p>
+            </div>
+            <div class="images relative w-[45%]">
+                <img class="absolute r-img " src="assets/img/stats-1.png" alt="Machine">
+                <img class="absolute r-img top-[25%] left-[20%] " src="assets/img/stats-2.png" alt="Car">
+                <img class="absolute r-img top-[45%] left-[55%] " src="assets/img/stats-3.png" alt="Home">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="mia-leading mx-[100px] mb-[96px] ">
+        <h2
+            class="font-semibold text-[43px] leading-[100%] text-[#333333] mb-[40px] text-center max-w-[1200px] mx-auto ">
+            MAI Leading Innovation in Construction & Property Improvement</h2>
+        <p
+            class="font-normal text-[22px] leading-[100%] text-black mb-[60px] opacity-[0.8] text-center max-w-[1350px] mx-auto ">
+            MAI stands at the forefront of innovation in construction and property improvement, hosting a wide range of
+            Projects—from painting and furnishing to bathroom upscaling, kitchen remodelling, stone worktop
+            installations, and more.</p>
+
+
+
+        <div class="hover-cards flex gap-[28px]   ">
+            <div class="hover-item active ">
+                <h3 class=" ">Trader</h3>
+                <div class="img-container">
+                    <img src="assets/img/trader.png" alt="Trader">
+                </div>
+
+                <p>Register now to find trusted home services and verified traders for free online. With MAI, you
+                    get
+                    full project transparrcy from start to finish. Use advanced filters to make faster, smarter
+                    decisions. Register now to find trusted home services and verified traders for free online</p>
+                <div class="hover-cards-btns flex gap-[13px] ">
+                    <a class="font-medium text-[15px] leading-[100%] text-white bg-[#2086CEE5] rounded-[140px] py-[15px] w-[280px] text-center "
+                        href="https://www.myproject.ai/trader-list">View All Trader</a>
+                    <a class="font-medium text-[15px] leading-[100%] text-[#003F6B] bg-white rounded-[140px] border border-[#003F6B] py-[15px] w-[280px] text-center "
+                        href="https://www.myproject.ai/how-it-works/trader">How Its Works</a>
+                </div>
+                <img class="doodle-img bottom-[30px] left-[75px] " src="assets/img/doodle-1.png" alt="Doodle">
+                <img class="doodle-img bottom-[40px] right-[238px]" src="assets/img/doodle-2.png" alt="Doodle">
+                <img class="doodle-img top-0 right-[35px]" src="assets/img/doodle-3.png" alt="Doodle">
+            </div>
+            <div class="hover-item  ">
+                <h3 class=" ">Project Owner</h3>
+                <div class="img-container">
+                    <img src="assets/img/project-owner.png" alt="Project Owner">
+                </div>
+                <p>Register now to find trusted home services and verified traders for free online. With MAI, you
+                    get
+                    full project transparrcy from start to finish. Use advanced filters to make faster, smarter
+                    decisions. Register now to find trusted home services and verified traders for free online</p>
+                <div class="hover-cards-btns flex gap-[13px] ">
+                    <a class="font-medium text-[15px] leading-[100%] text-white bg-[#2086CEE5] rounded-[140px] py-[15px] w-[280px] text-center "
+                        href="https://www.myproject.ai/projects">View All Project Owner</a>
+                    <a class="font-medium text-[15px] leading-[100%] text-[#003F6B] bg-white rounded-[140px] border border-[#003F6B] py-[15px] w-[280px] text-center "
+                        href="https://www.myproject.ai/how-it-works/project-owner">How Its Works</a>
+                </div>
+                <img class="doodle-img bottom-[30px] left-[75px] " src="assets/img/doodle-1.png" alt="Doodle">
+                <img class="doodle-img bottom-[40px] right-[238px]" src="assets/img/doodle-2.png" alt="Doodle">
+                <img class="doodle-img top-0 right-[35px]" src="assets/img/doodle-3.png" alt="Doodle">
+            </div>
+            <div class="hover-item  ">
+                <h3 class="">Intern</h3>
+                <div class="img-container">
+                    <img src="assets/img/intern.png" alt="Intern">
+                </div>
+                <p>Register now to find trusted home services and verified traders for free online. With MAI, you
+                    get
+                    full project transparrcy from start to finish. Use advanced filters to make faster, smarter
+                    decisions. Register now to find trusted home services and verified traders for free online</p>
+                <div class="hover-cards-btns flex gap-[13px] ">
+                    <a class="font-medium text-[15px] leading-[100%] text-white bg-[#2086CEE5] rounded-[140px] py-[15px] w-[280px] text-center "
+                        href="https://www.myproject.ai/intern-list">View All Intern</a>
+                    <a class="font-medium text-[15px] leading-[100%] text-[#003F6B] bg-white rounded-[140px] border border-[#003F6B] py-[15px] w-[280px] text-center "
+                        href="https://www.myproject.ai/how-it-works/intern">How Its Works</a>
+                </div>
+                <img class="doodle-img bottom-[30px] left-[75px] " src="assets/img/doodle-1.png" alt="Doodle">
+                <img class="doodle-img bottom-[40px] right-[238px]" src="assets/img/doodle-2.png" alt="Doodle">
+                <img class="doodle-img top-0 right-[35px]" src="assets/img/doodle-3.png" alt="Doodle">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="slider bg-[#F5F5F5] py-[90px] ">
+        <div class="mx-[100px]">
+            <h2 class="font-semibold text-[43px] leading-[100%] mb-[40px] flex justify-center gap-[10px] ">Traders - Why
+                Traders Choose MAI
+                <img src="assets/img/question.svg" alt="Question">
+            </h2>
+            <p class="font-normal text-[22px] leading-[100%] text-center mb-[173px] ">MAI upholds high standards by
+                thoroughly vetting all Traders, ensuring only top professionals are featured. Traders enjoy consistent
+                inquiries, effective communication, and tools to enhance credibility and showcase their work. With MAI,
+                they
+                expand client base and manage Projects efficiently.</p>
+            <div class="slider-wrapper relative">
+
+                <div class="slider-track mb-[26px] flex gap-6 transition-transform duration-700">
+
+                    <div class="slider-card pos-1">
+                        <img src="/assets/img/slider-1.png" class="w-full object-cover rounded">
+                        <div class="content">
+                            <h3>Robert Fox</h3>
+                            <p>Birmingham</p>
+                        </div>
+                    </div>
+
+                    <div class="slider-card pos-2">
+                        <img src="/assets/img/slider-2.png" class="w-full object-cover rounded">
+                        <div class="content">
+                            <h3>Robert Fox</h3>
+                            <p>Greater London</p>
+                        </div>
+                    </div>
+
+                    <div class="slider-card pos-3">
+                        <img src="/assets/img/slider-3.png" class="w-full object-cover rounded">
+                        <div class="content">
+                            <h3>Guy Hawkins</h3>
+                            <p>Birmingham</p>
+                        </div>
+                    </div>
+
+                    <div class="slider-card pos-4">
+                        <img src="/assets/img/slider-1.png" class="w-full object-cover rounded">
+                        <div class="content">
+                            <h3>Jane Cooper</h3>
+                            <p>Greater London</p>
+                        </div>
+                    </div>
+
+                    <div class="slider-card pos-5">
+                        <img src="/assets/img/slider-2.png" class="w-full object-cover rounded">
+                        <div class="content">
+                            <h3>Ronald Richards</h3>
+                            <p>Birmingham</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="absolute left-[46%] bottom-[-10px] -translate-y-1/2">
+                    <button id="prevBtn">
+                        <img src="assets/img/prev.svg" alt="Previous">
+                    </button>
+
+                    <button id="nextBtn">
+                        <img src="assets/img/next.svg" alt="Next">
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="text-center">
+                <a class="link" href="https://www.myproject.ai/trader-list">View All Trader</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="latest-blog mx-[100px] mt-[172px] mb-[156px] ">
+        <div class="flex justify-between mb-[53px] ">
+            <div class="content max-w-[1300px]">
+                <h2 class="text-[43px]/[100%] font-semibold text-[#222222] mb-[16px] ">Latest BLOG</h2>
+                <p class="text-[22px]/[100%] font-normal text-black  ">Explore MAI’s expert blogs for valuable insights,
+                    practical tips, and the latest industry updates.
+                    Our articles cover a range of topics to help you stay informed and make informed decisions. Dive
+                    into expert advice and stay ahead in the industry with our engaging and informative content</p>
+            </div>
+
+            <div class="flex items-center ">
+                <a class="link text-[22px]/[100%] font-normal text-[#F5F5F5] max-w-[333px] px-[85px] py-[18px] bg-[#003F6B] border border-[1px] border-[#003F6B] rounded-[13px] "
+                    href="https://www.myproject.ai/blogs">View All Blogs</a>
+            </div>
+        </div>
+        <div class="images-section flex gap-[33px]">
+            <ul>
+                <li><img src="assets/img/blog-pics-1.png" alt="Blog">
+                    <div class="content pl-[20px] pb-[20px] w-full rounded-b-[24px] ">
+                        <h5 class="text-[30px] text-white font-bold ">Viola Marble bathroom ledge</h5>
+                        <p class="text-[22px] text-white font-medium ">&euro; 50 - &euro; 200</p>
+                        <p class="text-[16px] text-white font-normal ">Great Manchester - England</p>
+                    </div>
+                </li>
+                <li><img src="assets/img/blog-pics-4.png" alt="Blog">
+                    <div class="content pl-[20px] pb-[20px] w-full rounded-b-[24px] ">
+                        <h5 class="text-[30px] text-white font-bold ">Viola Marble bathroom ledge</h5>
+                        <p class="text-[22px] text-white font-medium ">&euro; 50 - &euro; 200</p>
+                        <p class="text-[16px] text-white font-normal ">Great Manchester - England</p>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="assets/img/blog-pics-2.png" alt="Blog">
+                    <div class="content pl-[20px] pb-[20px] w-full rounded-b-[24px] ">
+                        <h5 class="text-[30px] text-white font-bold ">Viola Marble bathroom ledge</h5>
+                        <p class="text-[22px] text-white font-medium ">&euro; 50 - &euro; 200</p>
+                        <p class="text-[16px] text-white font-normal ">Great Manchester - England</p>
+                    </div>
+                </li>
+                <li><img src="assets/img/blog-pics-5.png" alt="Blog">
+                    <div class="content pl-[20px] pb-[20px] w-full rounded-b-[24px] ">
+                        <h5 class="text-[30px] text-white font-bold ">Viola Marble bathroom ledge</h5>
+                        <p class="text-[22px] text-white font-medium ">&euro; 50 - &euro; 200</p>
+                        <p class="text-[16px] text-white font-normal ">Great Manchester - England</p>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="assets/img/blog-pics-3.png" alt="Blog">
+                    <div class="content pl-[20px] pb-[20px] w-full rounded-b-[24px] ">
+                        <h5 class="text-[30px] text-white font-bold ">Viola Marble bathroom ledge</h5>
+                        <p class="text-[22px] text-white font-medium ">&euro; 50 - &euro; 200</p>
+                        <p class="text-[16px] text-white font-normal ">Great Manchester - England</p>
+                    </div>
+                </li>
+                <li><img src="assets/img/blog-pics-6.png" alt="Blog">
+                    <div class="content pl-[20px] pb-[20px] w-full rounded-b-[24px] ">
+                        <h5 class="text-[30px] text-white font-bold ">Viola Marble bathroom ledge</h5>
+                        <p class="text-[22px] text-white font-medium ">&euro; 50 - &euro; 200</p>
+                        <p class="text-[16px] text-white font-normal ">Great Manchester - England</p>
+                    </div>
+                </li>
+            </ul>
+            <div></div>
+        </div>
+    </section>
+
+    <footer class="bg-[#F5F5F5]">
+        <section class="mx-[100px] pb-[30px] pt-[50px] ">
+            <div class="flex justify-between pb-[30px] border-b border-b-[#2222224D] ">
+                <a href="/"><img src="assets/img/logo-blue.svg" alt="Logo"></a>
+                <ul class="flex items-center gap-[50px] font-normal text-[17px] leading-[100%] ">
+                    <li><a href="https://www.myproject.ai/aboutus">About Us</a></li>
+                    <li><a href="https://www.myproject.ai/contact-us">Contact Us</a></li>
+                    <li><a href="https://www.myproject.ai/careers">Careers</a></li>
+                    <li><a href="https://www.myproject.ai/faq">FAQ</a></li>
+                    <li><a href="https://www.myproject.ai/csr">CSR</a></li>
+                    <li><a href="https://www.myproject.ai/terms-and-conditions">Terms & Conditions</a></li>
+                    <li><a href="https://www.myproject.ai/terms-and-conditions">Terms & Conditions</a></li>
+                </ul>
+                <ul class="flex gap-[13px] ">
+                    <li><a href="https://www.instagram.com/mai_uk_/" target="_blank" ><img src="assets/img/instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61555569370613" target="_blank" ><img src="assets/img/facebook.svg" alt="Facebook"></a></li>
+                    <li><a href="https://x.com/MAI__UK" target="_blank"><img src="assets/img/twitter.svg" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            <div class="flex justify-between items-center mt-[26px]">
+                <div class="flex items-center gap-[4px]">
+                    <img src="assets/img/location.svg" alt="Location">
+                    <p class="font-normal text-[17px] leading-[100%]">MAI Corporation Ltd , 1 De La Warr Way Cambourne,
+                        Cambridge, CB23 6DX</p>
+                </div>
+                <p class="font-normal text-[14px] leading-[100%]">© Copyright Myproject.Ai All Rights Reserved</p>
+            </div>
+
+        </section>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>
